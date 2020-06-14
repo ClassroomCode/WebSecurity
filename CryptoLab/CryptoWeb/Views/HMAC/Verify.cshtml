@@ -1,0 +1,11 @@
+﻿
+@{
+  ViewData["Title"] = "Verify HMAC";
+}
+
+<h4>Verify HMAC</h4>
+<br />
+<p>Payload: <strong>@Html.Raw(ViewBag.Payload)</strong></p>
+<p>Included HMAC: <strong>@Html.Raw(ViewBag.IncludedHMAC)</strong></p>
+<p>Calculated HMAC: <strong>@Html.Raw(ViewBag.CalculatedHMAC)</strong></p>
+<p>Is Valid: <strong>@Html.Raw(ViewBag.IsValid)</strong></p>

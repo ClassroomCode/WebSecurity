@@ -1,0 +1,22 @@
+﻿@{
+  ViewData["Title"] = "Symmetric Encryption";
+}
+
+<h2>Hashing</h2>
+
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <form asp-action="Hash" method="post">
+      <div class="form-group">
+        <label class="control-label">Plaintext</label>
+        <input name="plaintext" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Hash" class="btn btn-primary" />
+      </div>
+    </form>
+  </div>
+</div>
+
+

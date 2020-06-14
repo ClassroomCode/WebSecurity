@@ -1,0 +1,36 @@
+﻿@{
+  ViewData["Title"] = "Symmetric Encryption";
+}
+
+<h2>Asymmetric Encryption</h2>
+
+<hr />
+<div class="row">
+  <div class="col-md-4">
+    <form asp-action="Encrypt" method="post">
+      <div class="form-group">
+        <label class="control-label">Plaintext</label>
+        <input name="plaintext" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Encrypt" class="btn btn-primary" />
+      </div>
+    </form>
+  </div>
+</div>
+<br />
+<div class="row">
+  <div class="col-md-4">
+    <form asp-action="Decrypt" method="post">
+      <div class="form-group">
+        <label class="control-label">Ciphertext</label>
+        <input name="ciphertext" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Decrypt" class="btn btn-primary" />
+      </div>
+    </form>
+  </div>
+</div>
+
+
